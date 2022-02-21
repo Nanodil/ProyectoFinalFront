@@ -1,0 +1,209 @@
+body {
+  box-sizing: border-box;
+  color: black;
+}
+.footer-fix {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.nav-logo-desktop {
+  width: 250px;
+  height: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .nav-logo-desktop {
+    width: 150px;
+    height: 40px;
+  }
+}
+.container-register {
+  background-image: url(./assets/register-page-bg.jpg);
+  background-size: cover;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: white;
+}
+.container-contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url(./assets/contact-page-bg.jpg) no-repeat top center;
+  background-size: cover;
+  color: white;
+}
+.text-format {
+  padding: 5rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.text-format h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+}
+.text-format h5 {
+  text-align: justify;
+}
+.text-format p {
+  text-align: justify;
+}
+.ver-mas {
+  cursor: pointer;
+}
+.ver-mas:hover {
+  color: #b59062;
+}
+
+.bg-grey {
+  background-color: #f7f7f7;
+}
+.bg-blue{
+  background-color: #203048;
+  border: none;
+}
+/* BOTON GENERAL */
+.btn-general-style {
+  font-family: "Montserrat", sans-serif !important;
+  background-color: #b59062;
+  color: white;
+  border: 1px solid #b59062;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.btn-general-style:hover {
+  background-color: white;
+  color: #b59062;
+}
+
+/* botones admin */
+.btn-admin {
+  border-radius: 0.3rem;
+  color: rgb(255, 255, 255);
+  background: #203048;
+  padding: 1px 6px;
+  border: 2px outset #203048;
+}
+.btn-admin:hover {
+  background: #2f476b;
+  color: #b59062;
+}
+.btn-admin:active {
+  border: 2px inset #203048;
+}
+.btn-admin:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem #b59062;
+}
+/* search tables admin */
+.search-table {
+  border: 2px solid #203048;
+  border-radius: 1.1rem;
+}
+
+.title-style {
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-weight: 900; */
+  color: #b59062;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+/* spinner */
+.spinner-style {
+  position:fixed;
+  top: 50%;
+  right: 48%;
+  z-index: 2;
+  color: #1d4683 !important;
+}
+.spinner-style .spinner-border {
+  width: 4rem;
+  height: 4rem;
+}
+/* no results card */
+.no-results-card {
+  color: #f7f7f7;
+  background-color: #b59062ce !important ;
+  border: 0.3rem ridge #b8884eb6 !important ;
+}
+
+/* acordion logica compra */
+.accordion-buy {
+  border: none !important;
+}
+.accordion-buy .accordion-header {
+  display: flex;
+  justify-content: center;
+}
+.accordion-buy .accordion-header button {
+  margin: 0;
+  display: flow-root;
+  text-align: center;
+  background-color: #b59062 !important;
+  color: white !important;
+  font-family: "Montserrat", sans-serif !important;
+  border: 1px solid #b59062;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  width: 40%;
+}
+.accordion-buy .accordion-header button:hover {
+  background-color: white !important;
+  color: #b59062 !important;
+}
+.accordion-buy .accordion-header button:focus {
+  box-shadow: none;
+}
+.accordion-buy .accordion-body {
+  margin: 1rem 0;
+  padding-top: 0;
+}
+.datos-compra-div{
+  background-color: rgba(238, 238, 238, 0.726);
+  border-right: 1.5px solid black;
+}
+.bg-datos-compra {
+  background-color: rgba(238, 238, 238, 0.726);
+  border-left: 1.5px solid black;
+}
+
+@media only screen and (max-width: 992px) {
+  .datos-compra-div{
+    background-color: rgba(238, 238, 238, 0.726);
+    border-right: none;
+  }
+}
+.img-buy-data{
+  border: 1px solid rgba(238, 238, 238, 0.726);
+  background-color: white;
+}
+.border-subtotal-total {
+  border-top: 1.5px solid black;
+}
+.overflow-compra{
+  width: 100%;
+  height: 150px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+.circle-btn {
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 4rem;
+  background-color: #203048;
+  border: 2px outset #203048;
+}
+.circle-btn-disable {
+  color: gray;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 4rem;
+  background-color: #203048;
+  border: 2px outset #203048;
+}
+.circle-btn:hover {
+  background: #2f476b;
+  color: #b59062;
+}
